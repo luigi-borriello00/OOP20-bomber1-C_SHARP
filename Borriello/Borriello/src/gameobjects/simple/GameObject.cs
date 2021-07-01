@@ -12,7 +12,7 @@ namespace Borriello.src.gameobjects
 
         public IP2d Position { get; set; }
 
-        public void Hitted()
+        public virtual void Hitted()
         {
             this.Lifes = this.Lifes - 1;
             if(this.Lifes == 0)
@@ -23,7 +23,7 @@ namespace Borriello.src.gameobjects
 
         public GameObject(IP2d pos)
         {
-            this.Lifes = 2;
+            this.Lifes = 1;
             this.IsAlive = true;
             this.Position = pos;
         }
