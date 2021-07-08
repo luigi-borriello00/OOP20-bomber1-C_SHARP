@@ -7,6 +7,6 @@ namespace Mazzanti.src.gameobjects.fire
 {
     interface IFire : IGameObject
     {
-
+        const int LIFE_TIME = 100;
     }
 }
